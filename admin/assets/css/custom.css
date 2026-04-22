@@ -1,0 +1,77 @@
+.quantityInput {
+    width: 50px !important;
+    padding: 6px 3px;
+    text-align: center;
+    border: 1px solid #cfb1b1;
+    outline: 0;
+    margin-right: 1px;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.dashboard {
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.dashboard:hover {
+    transform: translateY(-5px);
+}
+
+.background-gradient-primary {
+    background: linear-gradient(45deg, #0d6efd, #0a58ca);
+}
+
+.background-gradient-success {
+    background: linear-gradient(45deg, #198754, #146c43);
+}
+
+.background-gradient-warning {
+    background: linear-gradient(45deg, #ffc107, #d39e00);
+}
+
+.background-gradient-danger {
+    background: linear-gradient(45deg, #dc3545, #a71d2a);
+}
+
+.background-gradient-dark {
+    background: linear-gradient(45deg, #212529, #000);
+}
+
+/* Navbar (top bar) */
+.custom-navbar {
+    background: linear-gradient(45deg, #4e73df, #224abe);
+}
+
+/* Sidebar background */
+.custom-sidebar {
+    background: #1e293b; /* modern dark blue */
+}
+
+/* Sidebar text */
+.custom-sidebar .nav-link {
+    color: #cbd5e1;
+}
+
+/* Hover effect */
+.custom-sidebar .nav-link:hover {
+    background-color: #334155;
+    color: #fff;
+    border-radius: 6px;
+}
+
+/* Active menu */
+.custom-sidebar .nav-link.active {
+    background: linear-gradient(45deg, #4e73df, #224abe);
+    color: #fff !important;
+    border-radius: 6px;
+}
+
+/* Section headings */
+.custom-sidebar .sb-sidenav-menu-heading {
+    color: #94a3b8;
+}
