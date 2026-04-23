@@ -28,7 +28,7 @@ if(isset($_POST['addItem']) && $_SERVER["REQUEST_METHOD"] === 'POST'){
                 $productData = [
                     'product_id' => $row['id'],
                     'name' => $row['name'],
-                    'image' => $row['name'],
+                    'image' => $row['image'],
                     'price' => $row['price'],
                     'quantity' => $quantity
                 ];
@@ -43,7 +43,7 @@ if(isset($_POST['addItem']) && $_SERVER["REQUEST_METHOD"] === 'POST'){
                             $productData = [
                                 'product_id' => $row['id'],
                                 'name' => $row['name'],
-                                'image' => $row['name'],
+                                'image' => $row['image'],
                                 'price' => $row['price'],
                                 'quantity' => $newQuantity
                             ];
@@ -193,7 +193,7 @@ if(isset($_POST['saveOrder'])){
             $dataUpdate = [
                 'quantity' => $totalProductQuantity
             ];
-            $updateProductQuantity = update('products', $productId, $productData);
+            $updateProductQuantity = update('products', $productId, $dataUpdate);
         }
 
         unset($_SESSION['productItemIds']);
